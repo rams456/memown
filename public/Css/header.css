@@ -1,0 +1,153 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap'); */
+:root
+{
+	--var-padding: 3vh 5vw;
+	--font-color: yellow;
+	--txt-color: pink;
+	--txt-family: 'Shizuru', cursive;
+	--txt-family: 'Redressed', cursive;
+	--bg-color: brown;
+	--bg-image: linear-gradient(red,yellow);
+}
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header
+{
+	padding: var(--var-padding);
+}
+header.sticky
+{
+	position: fixed;
+	z-index: 1;
+	background: white;
+	scroll-behavior: smooth;
+}
+main
+{
+	/* background: red; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+main a
+{
+	background: yellow;
+	
+	display: contents;
+}
+main img
+{
+	width: 20%;
+}
+main .search
+{
+	background: #f5f5f5;
+	display: flex;
+	align-items: center;
+	width: 30%;
+	border-radius: 1em;
+}
+main .search input[type=text]
+{
+	padding: 1vh 2vw;
+	width: 100%;
+	border: none;
+	outline: none;
+	background: #f5f5f5;
+	border-radius: 1em;
+}
+main .search .glyphicon-search
+{
+	padding: 0vh 1vw;
+	border-left: 1px solid #333351;
+}
+main .user
+{
+	/* background: yellow; */
+}
+main .user ul
+{
+	/* background: pink; */
+	padding: 0vh 1vw;
+	/* display: contents; */
+	display: flex;
+}
+main .user ul li
+{
+	list-style: none;
+	/* border: 1px solid; */
+	padding: 0vh 1vw;
+	align-items: center;
+	font-size: 1.4em;
+}
+
+/* Navigation was start------- */
+nav
+{
+	/* background: red; */
+	/* padding: 0vh 5vw; */
+}
+nav ul
+{
+	display: flex;
+	justify-content: flex-end;
+	/* background: red; */
+	margin-bottom: auto;
+}
+nav ul li
+{
+	list-style: none;
+}
+nav ul li button
+{
+	border: none;
+	color: #78909c;
+	background: transparent;
+	/* font-family: 'Raleway', sans-serif; */
+	font-weight: 700;
+	transition: 0.4s;
+	padding: 1vh 2vw;
+}
+nav ul li .dropdown-content
+{
+	display: none;
+}
+nav ul li:hover .dropdown-content
+{
+	display: block;
+}
+nav ul li .column
+{
+	float: left;
+	width: 100%;
+}
+nav ul li .column>a
+{
+	display: block;
+	width: 100%;
+	color: #d6d6d9;
+	text-decoration: none;
+	margin-bottom: 1.5vh;
+}
+nav ul li .column>a:hover
+{
+	color: #757575;
+}
+nav ul li .dropdown-content .row
+{
+	display: flex;
+    /* background: linear-gradient(#eeeeee,#cfd8dc); */
+    background: linear-gradient(#ffffff,#f5f5f5);
+    /* background: yellow; */
+    position: absolute;
+    width: 100%;
+    padding: 0vh 5vw;
+    float: inline-start;
+    left: 1%;
+    z-index: 1;
+}
